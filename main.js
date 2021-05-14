@@ -3,18 +3,12 @@ const currentYear = new Date().getFullYear();
 const currentMonth = new Date().getMonth();
 const currentDate = new Date().getDate();
 
-console.log(currentMonth);
 setInterval(() => {
-    getRemainingMonth();
     getRemainingDays();
     getRemainingMinutes();
     getRemainingSeconds();
     getRemainingHours();
 }, 1000);
-function getRemainingMonth() {
-    let monthRemaining = document.getElementById("months");
-    monthRemaining.innerText = 12 - (currentMonth + 1);
-}
 
 function getRemainingDays() {
     let result = 365;
