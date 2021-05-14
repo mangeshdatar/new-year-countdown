@@ -17,7 +17,6 @@ function getRemainingDays() {
         febMonth = 29;
     }
     for (let i = 1; i <= (currentMonth); i++) {
-        debugger
         if (i % 2 == 0) {
 
             if (i == 2) {
